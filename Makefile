@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/09/07 16:46:33 by lcroxatt          #+#    #+#              #
+#    Updated: 2024/09/07 16:46:34 by lcroxatt         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRCS =	map_check.c	\
 		map_create.c	\
 		main.c	\
@@ -13,7 +25,7 @@ CFLAGS = -Wall -Wextra -Werror -g -Iheaders/
 
 NAME = so_long
 
-MLX_PATH = lib/minilibx
+MLX_PATH = mlx
 LIBFT_PATH = lib/libft
 FT_PRINTF_PATH = lib/ft_printf
 GET_NEXT_LINE_PATH = lib/get_next_line

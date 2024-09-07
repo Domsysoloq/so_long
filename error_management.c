@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   error_management.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatkeski <fatkeski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/03 21:10:29 by fatkeski          #+#    #+#             */
-/*   Updated: 2024/05/04 19:29:20 by fatkeski         ###   ########.fr       */
+/*   Created: 2024/09/07 16:48:08 by lcroxatt          #+#    #+#             */
+/*   Updated: 2024/09/07 16:48:10 by lcroxatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 void	free_map(char **map)
 {
 	int	i;
+	int	j;
 
+	j = 0;
+	(void)j;
 	if (map == NULL)
 		exit(0);
 	i = 0;

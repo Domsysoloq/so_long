@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   graphic_management.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatkeski <fatkeski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/03 21:10:48 by fatkeski          #+#    #+#             */
-/*   Updated: 2024/05/04 19:46:02 by fatkeski         ###   ########.fr       */
+/*   Created: 2024/09/07 16:47:46 by lcroxatt          #+#    #+#             */
+/*   Updated: 2024/09/07 16:47:49 by lcroxatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
