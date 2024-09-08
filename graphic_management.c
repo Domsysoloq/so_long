@@ -6,7 +6,7 @@
 /*   By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 16:47:46 by lcroxatt          #+#    #+#             */
-/*   Updated: 2024/09/07 16:47:49 by lcroxatt         ###   ########.fr       */
+/*   Updated: 2024/09/07 20:46:59 by lcroxatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,24 +28,24 @@ static void	init_img_to_mlx(t_game *game)
 	(game->img_ptr).floor = mlx_xpm_file_to_image(game->mlx,
 			"textures/floor.xpm", &width, &height);
 	if (!((game->img_ptr).floor))
-		print_error_message("Error: floor image cannot initialized\n", game);
+		print_error_message("Error: floor image cannot initialize\n", game);
 	(game->img_ptr).wall = mlx_xpm_file_to_image(game->mlx, "textures/wall.xpm",
 			&width, &height);
 	if (!((game->img_ptr).wall))
-		print_error_message("Error: wall image cannot initialized\n", game);
+		print_error_message("Error: wall image cannot initialize\n", game);
 	(game->img_ptr).collectible = mlx_xpm_file_to_image(game->mlx,
 			"textures/collectible.xpm", &width, &height);
 	if (!((game->img_ptr).collectible))
-		print_error_message("Error: collectible image cannot initialized\n",
+		print_error_message("Error: collectible image cannot initialize\n",
 			game);
 	(game->img_ptr).player = mlx_xpm_file_to_image(game->mlx,
 			"textures/player.xpm", &width, &height);
 	if (!((game->img_ptr).player))
-		print_error_message("Error: player image cannot initialized\n", game);
+		print_error_message("Error: player image cannot initialize\n", game);
 	(game->img_ptr).exit = mlx_xpm_file_to_image(game->mlx, "textures/exit.xpm",
 			&width, &height);
 	if (!((game->img_ptr).exit))
-		print_error_message("Error: exit image cannot initialized\n", game);
+		print_error_message("Error: exit image cannot initialize\n", game);
 }
 
 static void	put_image(t_game *game, char c, int x, int y)
@@ -88,11 +88,11 @@ void	create_game_interface(t_game *game)
 {
 	game->mlx = mlx_init();
 	if (!(game->mlx))
-		print_error_message("Error: mlx cannot initialized\n", game);
+		print_error_message("Error: mlx cannot initialize\n", game);
 	game->mlx_window = mlx_new_window((game->mlx), (game->map->width * 64),
 			(game->map->height * 64), "so_long");
 	if (!(game->mlx_window))
-		print_error_message("Error: mlx window cannot initialized\n", game);
+		print_error_message("Error: mlx window cannot initialize\n", game);
 	init_img_to_mlx(game);
 	put_image_to_window(game);
 	mlx_hook(game->mlx_window, KEY_PRESS, 0, key_handler, game);

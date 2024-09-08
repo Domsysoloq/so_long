@@ -6,7 +6,7 @@
 /*   By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 16:46:47 by lcroxatt          #+#    #+#             */
-/*   Updated: 2024/09/07 16:46:50 by lcroxatt         ###   ########.fr       */
+/*   Updated: 2024/09/07 20:47:17 by lcroxatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ber_file_check(char *file_name, t_game *game)
 
 	len = ft_strlen(file_name);
 	if (len < 4 || ft_strncmp(".ber", &(file_name[len - 4]), 4) != 0)
-		print_error_message("Error: not ber file\n", game);
+		print_error_message("Error: not a ber file\n", game);
 }
 
 static void	wall_check(t_game *game)

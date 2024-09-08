@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatkeski <fatkeski@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 21:13:42 by fatkeski          #+#    #+#             */
-/*   Updated: 2024/05/04 15:19:04 by fatkeski         ###   ########.fr       */
+/*   Updated: 2024/09/07 20:30:32 by lcroxatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include "../lib/ft_printf/ft_printf.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/libft/libft.h"
-# include "../lib/minilibx/mlx.h"
+# include "../mlx/mlx.h"
 # include <errno.h>
 # include <fcntl.h>
 # include <stdio.h>

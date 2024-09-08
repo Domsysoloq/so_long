@@ -6,7 +6,7 @@
 #    By: lcroxatt <lcroxatt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/07 16:46:33 by lcroxatt          #+#    #+#              #
-#    Updated: 2024/09/07 16:46:34 by lcroxatt         ###   ########.fr        #
+#    Updated: 2024/09/07 20:37:07 by lcroxatt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ MLX_PATH = mlx
 LIBFT_PATH = lib/libft
 FT_PRINTF_PATH = lib/ft_printf
 GET_NEXT_LINE_PATH = lib/get_next_line
+INCLUDES_PATH = includes/
 
 MLX = libmlx.a
 LIBFT = libft.a
@@ -58,6 +59,9 @@ clean:
 	@make -s -C $(GET_NEXT_LINE_PATH) clean
 	@make -s -C $(MLX_PATH) clean
 
+norme:
+	norminette $(SRCS)
+
 fclean: clean
 	@$(RM) $(NAME)
 	@make -s -C $(LIBFT_PATH) fclean
@@ -66,4 +70,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re norme
